@@ -1,0 +1,842 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of Anshika P - Data Analyst Aspirant specializing in Python, SQL, Power BI, and Excel.">
+    <meta name="keywords" content="Anshika P, Data Analyst, Portfolio, Python, SQL, Power BI, Excel, Data Analytics">
+    <meta name="author" content="Anshika P">
+    <title>Anshika P | Data Analyst Portfolio</title>
+
+    <!-- Google Fonts: Plus Jakarta Sans & Space Grotesk -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap 5 CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- Font Awesome Icons CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Custom CSS File -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body data-bs-spy="scroll" data-bs-target="#mainNavbar" data-bs-offset="80" tabindex="0">
+
+    <!-- ==============================================
+         1. NAVBAR
+         ============================================== -->
+    <nav id="mainNavbar" class="navbar navbar-expand-lg fixed-top custom-navbar">
+        <div class="container">
+            <!-- Brand Logo / Personal Name -->
+            <a class="navbar-brand d-flex align-items-center" href="#home" id="brand-logo">
+                <span class="brand-icon me-2"><i class="fa-solid fa-chart-line"></i></span>
+                <span class="brand-name">ANSHIKA<span class="accent-dot">.P</span></span>
+            </a>
+
+            <!-- Mobile Hamburger Toggle Button -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navContent" 
+                    aria-controls="navContent" aria-expanded="false" aria-label="Toggle navigation" id="navbar-toggle-btn">
+                <span class="toggler-icon"><i class="fa-solid fa-bars-staggered"></i></span>
+            </button>
+
+            <!-- Navigation Links -->
+            <div class="collapse navbar-collapse" id="navContent">
+                <ul class="navbar-nav ms-auto align-items-lg-center">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#home" id="nav-home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about" id="nav-about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills" id="nav-skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects" id="nav-projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#education" id="nav-education">Education</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact" id="nav-contact">Contact</a>
+                    </li>
+                    <!-- Quick CTA Button -->
+                    <li class="nav-item ms-lg-3 mt-3 mt-lg-0">
+                        <a href="#contact" class="btn btn-sm btn-nav-cta" id="nav-cta-btn">
+                            <i class="fa-solid fa-paper-plane me-1"></i> Let's Talk
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ==============================================
+         2. HERO SECTION
+         ============================================== -->
+    <section id="home" class="hero-section d-flex align-items-center">
+        <!-- Ambient Glowing Background Orbs -->
+        <div class="ambient-glow glow-1"></div>
+        <div class="ambient-glow glow-2"></div>
+
+        <div class="container position-relative z-1">
+            <div class="row align-items-center g-5">
+                <!-- Hero Left Content -->
+                <div class="col-lg-7 text-center text-lg-start">
+                    <!-- Availability Badge -->
+                    <div class="badge-status d-inline-flex align-items-center mb-3">
+                        <span class="status-pulse me-2"></span>
+                        <span>Open to Data Analyst & Fresher Opportunities</span>
+                    </div>
+
+                    <!-- Main Heading -->
+                    <h1 class="hero-title mb-2">
+                        Hello, I'm <br>
+                        <span class="gradient-text">ANSHIKA P</span>
+                    </h1>
+
+                    <!-- Dynamic Role Subtitle with Typing Animation -->
+                    <div class="hero-role-wrapper mb-3">
+                        <span class="role-prefix">I am a </span>
+                        <span id="typing-text" class="role-dynamic">DATA ANALYST ASPIRANT</span>
+                        <span class="typing-cursor">|</span>
+                    </div>
+
+                    <!-- Short Introduction Bio -->
+                    <p class="hero-description text-secondary mb-4">
+                        Passionate about translating complex datasets into clear, actionable business stories. 
+                        Skilled in exploratory data analysis, data cleaning, automated dashboarding, and SQL querying. 
+                        Eager to contribute analytical precision and creative problem-solving to high-impact teams.
+                    </p>
+
+                    <!-- Call To Action Buttons -->
+                    <div class="d-flex flex-wrap gap-3 justify-content-center justify-content-lg-start mb-4">
+                        <a href="#projects" class="btn btn-primary-glow" id="hero-view-work-btn">
+                            <i class="fa-solid fa-briefcase me-2"></i> View My Work
+                        </a>
+                        <a href="#contact" class="btn btn-outline-glow" id="hero-contact-btn">
+                            <i class="fa-regular fa-envelope me-2"></i> Contact Me
+                        </a>
+                    </div>
+
+                    <!-- Social Media Links -->
+                    <div class="hero-socials d-flex align-items-center justify-content-center justify-content-lg-start gap-3">
+                        <span class="social-label text-muted small me-2">Connect:</span>
+                        <!-- GitHub -->
+                        <a href="https://github.com/" target="_blank" rel="noopener noreferrer" class="social-icon-box" title="GitHub" aria-label="GitHub Profile" id="social-github">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                        <!-- LinkedIn -->
+                        <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer" class="social-icon-box" title="LinkedIn" aria-label="LinkedIn Profile" id="social-linkedin">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                        <!-- Instagram -->
+                        <a href="https://instagram.com/" target="_blank" rel="noopener noreferrer" class="social-icon-box" title="Instagram" aria-label="Instagram Profile" id="social-instagram">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <!-- Direct Email -->
+                        <a href="mailto:anshika.analytics@example.com" class="social-icon-box" title="Send Email" aria-label="Send Email" id="social-email">
+                            <i class="fa-solid fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Hero Right Profile Card / Visual -->
+                <div class="col-lg-5 text-center">
+                    <div class="hero-avatar-wrapper position-relative mx-auto">
+                        <div class="avatar-glow-ring"></div>
+                        <div class="avatar-card">
+                            <img src="assets/images/avatar.jpg" alt="Anshika P - Data Analyst Aspirant" class="img-fluid hero-profile-img" id="hero-profile-image">
+                        </div>
+
+                        <!-- Floating Stat Badge 1 (Data Analyst Metrics) -->
+                        <div class="floating-badge badge-top-right">
+                            <div class="badge-icon text-accent-blue"><i class="fa-solid fa-chart-pie"></i></div>
+                            <div class="badge-text text-start">
+                                <span class="d-block fw-bold text-white">Power BI & SQL</span>
+                                <small class="text-secondary">Dashboard Specialist</small>
+                            </div>
+                        </div>
+
+                        <!-- Floating Stat Badge 2 (Analytical Precision) -->
+                        <div class="floating-badge badge-bottom-left">
+                            <div class="badge-icon text-accent-purple"><i class="fa-solid fa-database"></i></div>
+                            <div class="badge-text text-start">
+                                <span class="d-block fw-bold text-white">EDA & Cleaning</span>
+                                <small class="text-secondary">Data Integrity Driven</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==============================================
+         3. ABOUT ME SECTION
+         ============================================== -->
+    <section id="about" class="section-padding position-relative">
+        <div class="container">
+            <!-- Section Title -->
+            <div class="text-center mb-5">
+                <span class="section-badge">ABOUT ME</span>
+                <h2 class="section-heading mt-2">Driven by Curiosity, Powered by Data</h2>
+                <div class="heading-line mx-auto"></div>
+                <p class="section-subheading text-secondary mx-auto">
+                    Get to know my professional background, career aspirations, and what excites me about analytics.
+                </p>
+            </div>
+
+            <div class="row g-4 align-items-stretch">
+                <!-- Personal Introduction Card -->
+                <div class="col-lg-7">
+                    <div class="glass-card h-100 p-4 p-md-5">
+                        <div class="d-flex align-items-center mb-4">
+                            <div class="icon-bubble me-3">
+                                <i class="fa-solid fa-user-astronaut"></i>
+                            </div>
+                            <h3 class="h4 mb-0 text-white">Hello! I am Anshika P</h3>
+                        </div>
+
+                        <p class="text-secondary lead-text mb-3">
+                            I am an enthusiastic aspiring <strong class="text-white">Data Analyst</strong> with a solid groundwork in quantitative problem solving, database manipulation, and exploratory data visualization.
+                        </p>
+
+                        <p class="text-secondary mb-4">
+                            My journey began with a natural curiosity for discovering the "why" behind everyday metrics. Whether cleaning messy real-world datasets with Python, querying relational tables in SQL, or building intuitive KPI dashboards in Power BI and Excel, I love unearthing trends that guide smarter business choices.
+                        </p>
+
+                        <!-- Career Goals Block -->
+                        <div class="goal-box p-3 rounded-3 mb-4">
+                            <h4 class="h6 text-accent-purple fw-bold mb-2">
+                                <i class="fa-solid fa-bullseye me-2"></i> Career Objective
+                            </h4>
+                            <p class="text-secondary small mb-0">
+                                To secure a challenging entry-level Data Analyst or Business Analyst role where I can apply my analytical skills, continuously adopt cutting-edge BI tools, and generate measurable value for stakeholders.
+                            </p>
+                        </div>
+
+                        <!-- Quick Highlights Checklist -->
+                        <div class="row g-3">
+                            <div class="col-sm-6">
+                                <div class="highlight-item d-flex align-items-center">
+                                    <i class="fa-solid fa-check-circle text-accent-blue me-2"></i>
+                                    <span class="text-light">Data Cleaning & Wrangling</span>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="highlight-item d-flex align-items-center">
+                                    <i class="fa-solid fa-check-circle text-accent-blue me-2"></i>
+                                    <span class="text-light">KPI Dashboards & Reports</span>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="highlight-item d-flex align-items-center">
+                                    <i class="fa-solid fa-check-circle text-accent-blue me-2"></i>
+                                    <span class="text-light">Exploratory Data Analysis</span>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="highlight-item d-flex align-items-center">
+                                    <i class="fa-solid fa-check-circle text-accent-blue me-2"></i>
+                                    <span class="text-light">Data Storytelling & Insights</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Stats & Personality Cards -->
+                <div class="col-lg-5">
+                    <div class="row g-4 h-100">
+                        <div class="col-12">
+                            <div class="glass-card p-4">
+                                <div class="d-flex align-items-center mb-3">
+                                    <div class="icon-bubble purple-bubble me-3">
+                                        <i class="fa-solid fa-graduation-cap"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="h6 text-white mb-0">Fresh Perspective</h4>
+                                        <small class="text-secondary">Eager to Learn & Adapt</small>
+                                    </div>
+                                </div>
+                                <p class="text-secondary small mb-0">
+                                    As a motivated fresher, I bring up-to-date best practices, enthusiasm for modern tooling, and strong collaborative teamwork.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="col-12">
+                            <div class="glass-card p-4">
+                                <div class="d-flex align-items-center mb-3">
+                                    <div class="icon-bubble blue-bubble me-3">
+                                        <i class="fa-solid fa-lightbulb"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="h6 text-white mb-0">Analytical Mindset</h4>
+                                        <small class="text-secondary">Structured Problem Solving</small>
+                                    </div>
+                                </div>
+                                <p class="text-secondary small mb-0">
+                                    Passionate about breaking down ambiguous business questions into clear hypotheses, validating them with empirical evidence.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="col-12">
+                            <div class="glass-card p-4 d-flex flex-column justify-content-between">
+                                <div>
+                                    <h4 class="h6 text-white mb-2"><i class="fa-solid fa-file-arrow-down text-accent-purple me-2"></i>Looking for My Resume?</h4>
+                                    <p class="text-secondary small mb-3">
+                                        Feel free to review my detailed profile, educational achievements, and portfolio coursework.
+                                    </p>
+                                </div>
+                                <a href="#contact" class="btn btn-outline-glow btn-sm w-100" id="about-request-resume">
+                                    <i class="fa-solid fa-envelope me-2"></i> Request Resume / Connect
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==============================================
+         4. SKILLS SECTION
+         ============================================== -->
+    <section id="skills" class="section-padding position-relative bg-darker">
+        <div class="container">
+            <!-- Section Title -->
+            <div class="text-center mb-5">
+                <span class="section-badge">TECHNICAL EXPERTISE</span>
+                <h2 class="section-heading mt-2">Tools & Skills I Work With</h2>
+                <div class="heading-line mx-auto"></div>
+                <p class="section-subheading text-secondary mx-auto">
+                    A collection of analytical languages, database platforms, and visualization suites I use to turn numbers into decisions.
+                </p>
+            </div>
+
+            <!-- Primary 4 Core Skills (As Requested: EXCEL, PYTHON, SQL, POWER BI) -->
+            <div class="row g-4 mb-5">
+                <!-- 1. EXCEL -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="skill-card glass-card text-center p-4 h-100">
+                        <div class="skill-icon-wrap excel-glow mb-3">
+                            <i class="fa-solid fa-file-excel"></i>
+                        </div>
+                        <h3 class="h5 text-white mb-2">MICROSOFT EXCEL</h3>
+                        <p class="text-secondary small mb-3">
+                            Advanced Formulas, VLOOKUP/XLOOKUP, Pivot Tables, Power Query, Conditional Formatting & Financial Summaries.
+                        </p>
+                        <div class="skill-level-bar mb-2">
+                            <div class="skill-progress" style="width: 90%;"></div>
+                        </div>
+                        <span class="badge bg-purple-subtle text-accent-purple">Advanced Proficiency</span>
+                    </div>
+                </div>
+
+                <!-- 2. PYTHON -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="skill-card glass-card text-center p-4 h-100">
+                        <div class="skill-icon-wrap python-glow mb-3">
+                            <i class="fa-brands fa-python"></i>
+                        </div>
+                        <h3 class="h5 text-white mb-2">PYTHON</h3>
+                        <p class="text-secondary small mb-3">
+                            Pandas, NumPy, Matplotlib, Seaborn, Exploratory Data Analysis, Data Cleansing, Scripting & Statistical Modeling.
+                        </p>
+                        <div class="skill-level-bar mb-2">
+                            <div class="skill-progress" style="width: 85%;"></div>
+                        </div>
+                        <span class="badge bg-blue-subtle text-accent-blue">Data Science Core</span>
+                    </div>
+                </div>
+
+                <!-- 3. SQL -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="skill-card glass-card text-center p-4 h-100">
+                        <div class="skill-icon-wrap sql-glow mb-3">
+                            <i class="fa-solid fa-database"></i>
+                        </div>
+                        <h3 class="h5 text-white mb-2">SQL</h3>
+                        <p class="text-secondary small mb-3">
+                            Relational Databases (MySQL/PostgreSQL), Complex Joins, Window Functions, Aggregate Queries, CTEs & Indexing.
+                        </p>
+                        <div class="skill-level-bar mb-2">
+                            <div class="skill-progress" style="width: 85%;"></div>
+                        </div>
+                        <span class="badge bg-purple-subtle text-accent-purple">Relational Queries</span>
+                    </div>
+                </div>
+
+                <!-- 4. POWER BI -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="skill-card glass-card text-center p-4 h-100">
+                        <div class="skill-icon-wrap bi-glow mb-3">
+                            <i class="fa-solid fa-chart-column"></i>
+                        </div>
+                        <h3 class="h5 text-white mb-2">POWER BI</h3>
+                        <p class="text-secondary small mb-3">
+                            Interactive Dashboards, DAX Measures, Star Schema Data Modeling, KPI Reporting, Power Query ETL, and Executive Storytelling.
+                        </p>
+                        <div class="skill-level-bar mb-2">
+                            <div class="skill-progress" style="width: 88%;"></div>
+                        </div>
+                        <span class="badge bg-blue-subtle text-accent-blue">BI Visualization</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Supplementary Skills Badges / Chips -->
+            <div class="glass-card p-4 p-md-5">
+                <h3 class="h5 text-white mb-4 text-center">
+                    <i class="fa-solid fa-layer-group text-accent-purple me-2"></i> Additional Technologies & Competencies
+                </h3>
+                <div class="d-flex flex-wrap justify-content-center gap-2">
+                    <span class="skill-pill"><i class="fa-solid fa-chart-area me-2 text-accent-blue"></i>Data Visualization</span>
+                    <span class="skill-pill"><i class="fa-solid fa-broom me-2 text-accent-purple"></i>Data Cleaning & Wrangling</span>
+                    <span class="skill-pill"><i class="fa-brands fa-git-alt me-2 text-accent-blue"></i>Git & GitHub</span>
+                    <span class="skill-pill"><i class="fa-solid fa-table me-2 text-accent-purple"></i>Pandas & NumPy</span>
+                    <span class="skill-pill"><i class="fa-solid fa-chart-line me-2 text-accent-blue"></i>Matplotlib & Seaborn</span>
+                    <span class="skill-pill"><i class="fa-solid fa-calculator me-2 text-accent-purple"></i>Statistics & Probability</span>
+                    <span class="skill-pill"><i class="fa-brands fa-html5 me-2 text-accent-blue"></i>HTML5 & CSS3 Basics</span>
+                    <span class="skill-pill"><i class="fa-brands fa-js me-2 text-accent-purple"></i>JavaScript Fundamentals</span>
+                    <span class="skill-pill"><i class="fa-solid fa-comments me-2 text-accent-blue"></i>Data Storytelling</span>
+                    <span class="skill-pill"><i class="fa-solid fa-puzzle-piece me-2 text-accent-purple"></i>Analytical Problem Solving</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==============================================
+         5. PROJECTS SECTION
+         ============================================== -->
+    <section id="projects" class="section-padding position-relative">
+        <div class="container">
+            <!-- Section Title -->
+            <div class="text-center mb-5">
+                <span class="section-badge">PORTFOLIO SHOWCASE</span>
+                <h2 class="section-heading mt-2">Featured Projects</h2>
+                <div class="heading-line mx-auto"></div>
+                <p class="section-subheading text-secondary mx-auto">
+                    Real-world analytical case studies and interactive software built to solve genuine problems.
+                </p>
+            </div>
+
+            <div class="row g-4">
+                <!-- Project 1: Retail Sales EDA -->
+                <div class="col-lg-6">
+                    <div class="project-card glass-card h-100 overflow-hidden">
+                        <div class="project-img-wrapper position-relative">
+                            <img src="assets/images/retail-sales.jpg" alt="Retail Sales EDA Cleaning and Visualisation Project" class="img-fluid project-img" id="project-retail-img">
+                            <div class="project-category-badge">Data Analytics</div>
+                        </div>
+                        <div class="p-4 p-md-4 d-flex flex-column justify-content-between h-auto">
+                            <div>
+                                <h3 class="h4 text-white project-title mb-2">RETAIL SALES EDA CLEANING AND VISUALISATION</h3>
+                                <p class="text-secondary small mb-3">
+                                    Comprehensive exploratory data analysis examining retail transactional records. Cleaned noisy records, mitigated missing values and outliers, analyzed sales velocity across store channels, and generated actionable KPI summaries for inventory and marketing optimization.
+                                </p>
+                                <!-- Tech Stack Badges -->
+                                <div class="project-tags mb-4">
+                                    <span class="badge tech-badge">Python</span>
+                                    <span class="badge tech-badge">Pandas</span>
+                                    <span class="badge tech-badge">Seaborn</span>
+                                    <span class="badge tech-badge">Power BI</span>
+                                    <span class="badge tech-badge">Data Cleaning</span>
+                                </div>
+                            </div>
+                            <!-- Action Buttons -->
+                            <div class="d-flex gap-2">
+                                <a href="https://github.com/" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-glow flex-grow-1" id="project1-github">
+                                    <i class="fa-brands fa-github me-1"></i> GitHub Repo
+                                </a>
+                                <a href="#contact" class="btn btn-sm btn-primary-glow flex-grow-1" id="project1-demo">
+                                    <i class="fa-solid fa-arrow-up-right-from-square me-1"></i> View Case Study
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2: Customer Churn & Retention Analytics -->
+                <div class="col-lg-6">
+                    <div class="project-card glass-card h-100 overflow-hidden">
+                        <div class="project-img-wrapper position-relative">
+                            <img src="assets/images/churn-analytics.jpg" alt="Customer Churn & Retention Analytics Project" class="img-fluid project-img" id="project-churn-img">
+                            <div class="project-category-badge">Business Intelligence</div>
+                        </div>
+                        <div class="p-4 p-md-4 d-flex flex-column justify-content-between h-auto">
+                            <div>
+                                <h3 class="h4 text-white project-title mb-2">CUSTOMER CHURN & RETENTION ANALYTICS</h3>
+                                <p class="text-secondary small mb-3">
+                                    End-to-end subscriber attrition and cohort analysis using SQL and Power BI. Identified key factors driving customer churn, built predictive risk matrices, and modeled dynamic retention strategies saving estimated revenue.
+                                </p>
+                                <!-- Tech Stack Badges -->
+                                <div class="project-tags mb-4">
+                                    <span class="badge tech-badge">SQL</span>
+                                    <span class="badge tech-badge">Power BI</span>
+                                    <span class="badge tech-badge">DAX</span>
+                                    <span class="badge tech-badge">Excel</span>
+                                    <span class="badge tech-badge">Cohort Analysis</span>
+                                </div>
+                            </div>
+                            <!-- Action Buttons -->
+                            <div class="d-flex gap-2">
+                                <a href="https://github.com/" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-glow flex-grow-1" id="project2-github">
+                                    <i class="fa-brands fa-github me-1"></i> GitHub Repo
+                                </a>
+                                <a href="#contact" class="btn btn-sm btn-primary-glow flex-grow-1" id="project2-demo">
+                                    <i class="fa-solid fa-arrow-up-right-from-square me-1"></i> View Dashboard
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3: Global Superstore Financial Analysis -->
+                <div class="col-md-6 col-lg-6">
+                    <div class="project-card glass-card h-100 p-4 d-flex flex-column justify-content-between">
+                        <div>
+                            <div class="d-flex align-items-center justify-content-between mb-3">
+                                <span class="badge bg-purple-subtle text-accent-purple px-3 py-2 rounded-pill">SQL & Finance</span>
+                                <i class="fa-solid fa-chart-line text-accent-blue fa-lg"></i>
+                            </div>
+                            <h3 class="h5 text-white project-title mb-2">Global Superstore Financial & Profitability Analysis</h3>
+                            <p class="text-secondary small mb-3">
+                                Structured relational SQL queries and Power Query models analyzing multinational e-commerce profit margins, discount impacts, and regional logistics efficiency.
+                            </p>
+                            <div class="project-tags mb-4">
+                                <span class="badge tech-badge">SQL</span>
+                                <span class="badge tech-badge">Power BI</span>
+                                <span class="badge tech-badge">Excel</span>
+                                <span class="badge tech-badge">Data Modeling</span>
+                            </div>
+                        </div>
+                        <div class="d-flex gap-2">
+                            <a href="https://github.com/" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-glow flex-grow-1" id="project3-github">
+                                <i class="fa-brands fa-github me-1"></i> Code
+                            </a>
+                            <a href="#contact" class="btn btn-sm btn-outline-glow flex-grow-1" id="project3-demo">
+                                <i class="fa-solid fa-arrow-up-right-from-square me-1"></i> Insights
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4: Placeholder (Customizable) -->
+                <div class="col-md-6 col-lg-6">
+                    <div class="project-card glass-card h-100 p-4 d-flex flex-column justify-content-between">
+                        <div>
+                            <div class="d-flex align-items-center justify-content-between mb-3">
+                                <span class="badge bg-blue-subtle text-accent-blue px-3 py-2 rounded-pill">Python & Statistics</span>
+                                <i class="fa-brands fa-python text-accent-purple fa-lg"></i>
+                            </div>
+                            <h3 class="h5 text-white project-title mb-2">Healthcare Trends & Statistical Analysis</h3>
+                            <p class="text-secondary small mb-3">
+                                Executed hypothesis testing, correlation analysis, and data normalization on public clinical records to discover significant health indicators and demographic trends using Python libraries.
+                            </p>
+                            <div class="project-tags mb-4">
+                                <span class="badge tech-badge">Python</span>
+                                <span class="badge tech-badge">NumPy</span>
+                                <span class="badge tech-badge">Matplotlib</span>
+                                <span class="badge tech-badge">Jupyter</span>
+                            </div>
+                        </div>
+                        <div class="d-flex gap-2">
+                            <a href="https://github.com/" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-glow flex-grow-1" id="project4-github">
+                                <i class="fa-brands fa-github me-1"></i> Code
+                            </a>
+                            <a href="#contact" class="btn btn-sm btn-outline-glow flex-grow-1" id="project4-demo">
+                                <i class="fa-solid fa-arrow-up-right-from-square me-1"></i> Notebook
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==============================================
+         6. EDUCATION SECTION
+         ============================================== -->
+    <section id="education" class="section-padding position-relative bg-darker">
+        <div class="container">
+            <!-- Section Title -->
+            <div class="text-center mb-5">
+                <span class="section-badge">ACADEMIC BACKGROUND</span>
+                <h2 class="section-heading mt-2">Education & Certifications</h2>
+                <div class="heading-line mx-auto"></div>
+                <p class="section-subheading text-secondary mx-auto">
+                    My formal education and continuous learning credentials in computer science and data analytics.
+                </p>
+            </div>
+
+            <!-- Timeline Layout -->
+            <div class="timeline-container mx-auto">
+                <!-- Timeline Item 1 -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="glass-card timeline-card p-4">
+                        <div class="d-flex flex-wrap justify-content-between align-items-center mb-2">
+                            <h3 class="h5 text-white mb-0">Bachelor of Technology / Computer Science Degree</h3>
+                            <span class="badge timeline-badge">2022 - 2026 (Expected)</span>
+                        </div>
+                        <div class="institution text-accent-blue fw-medium mb-2">
+                            <i class="fa-solid fa-building-columns me-2"></i>University / Institute of Technology
+                        </div>
+                        <p class="text-secondary small mb-2">
+                            Studying foundational and advanced computer systems, database management systems (DBMS), algorithm analysis, and statistics. Actively engaged in analytical practical labs and projects.
+                        </p>
+                        <div class="small text-muted">
+                            <i class="fa-solid fa-book-open me-1 text-accent-purple"></i> Key Coursework: Database Architecture, Object-Oriented Programming, Data Structures, Applied Statistics.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Timeline Item 2 -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="glass-card timeline-card p-4">
+                        <div class="d-flex flex-wrap justify-content-between align-items-center mb-2">
+                            <h3 class="h5 text-white mb-0">Professional Data Analytics & Visualization Certification</h3>
+                            <span class="badge timeline-badge">2024</span>
+                        </div>
+                        <div class="institution text-accent-purple fw-medium mb-2">
+                            <i class="fa-solid fa-award me-2"></i>Coursera / Google / Professional Training
+                        </div>
+                        <p class="text-secondary small mb-2">
+                            Completed intensive training covering Python data stacks, exploratory analysis, SQL query optimization, and Power BI interactive reports with industry case studies.
+                        </p>
+                        <div class="small text-muted">
+                            <i class="fa-solid fa-certificate me-1 text-accent-blue"></i> Focus: Real-world business problem translation, data validation, and dashboard storytelling.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Timeline Item 3 -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="glass-card timeline-card p-4">
+                        <div class="d-flex flex-wrap justify-content-between align-items-center mb-2">
+                            <h3 class="h5 text-white mb-0">Higher Secondary Education (Class XII)</h3>
+                            <span class="badge timeline-badge">2020 - 2022</span>
+                        </div>
+                        <div class="institution text-accent-blue fw-medium mb-2">
+                            <i class="fa-solid fa-school me-2"></i>Senior Secondary High School
+                        </div>
+                        <p class="text-secondary small mb-0">
+                            Completed higher secondary coursework with specialization in Mathematics, Physics, and Computer Science with distinguished academic performance.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==============================================
+         7. CONTACT SECTION
+         ============================================== -->
+    <section id="contact" class="section-padding position-relative">
+        <div class="container">
+            <!-- Section Title -->
+            <div class="text-center mb-5">
+                <span class="section-badge">GET IN TOUCH</span>
+                <h2 class="section-heading mt-2">Let's Connect & Collaborate</h2>
+                <div class="heading-line mx-auto"></div>
+                <p class="section-subheading text-secondary mx-auto">
+                    Interested in discussing a role, a project, or just talking data? My inbox is always open.
+                </p>
+            </div>
+
+            <div class="row g-4 justify-content-center">
+                <!-- Contact Info Column -->
+                <div class="col-lg-5">
+                    <div class="glass-card p-4 p-md-5 h-100 d-flex flex-column justify-content-between">
+                        <div>
+                            <h3 class="h4 text-white mb-3">Contact Information</h3>
+                            <p class="text-secondary small mb-4">
+                                I am actively seeking full-time Data Analyst opportunities, internships, and collaborative data projects. Feel free to connect directly!
+                            </p>
+
+                            <!-- Contact Info Items -->
+                            <div class="contact-info-list mb-4">
+                                <div class="contact-item d-flex align-items-center mb-3">
+                                    <div class="contact-icon me-3">
+                                        <i class="fa-solid fa-envelope"></i>
+                                    </div>
+                                    <div>
+                                        <span class="text-secondary small d-block">Email Address</span>
+                                        <a href="mailto:anshika.analytics@example.com" class="text-white contact-link">anshika.analytics@example.com</a>
+                                    </div>
+                                </div>
+
+                                <div class="contact-item d-flex align-items-center mb-3">
+                                    <div class="contact-icon me-3">
+                                        <i class="fa-solid fa-location-dot"></i>
+                                    </div>
+                                    <div>
+                                        <span class="text-secondary small d-block">Location</span>
+                                        <span class="text-white">India (Open to Remote & Onsite)</span>
+                                    </div>
+                                </div>
+
+                                <div class="contact-item d-flex align-items-center mb-3">
+                                    <div class="contact-icon me-3">
+                                        <i class="fa-solid fa-briefcase"></i>
+                                    </div>
+                                    <div>
+                                        <span class="text-secondary small d-block">Role Availability</span>
+                                        <span class="text-white">Fresher / Data Analyst Aspirant</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Social Media Links -->
+                        <div>
+                            <span class="text-secondary small d-block mb-2">Connect on Social Platforms:</span>
+                            <div class="d-flex gap-2">
+                                <a href="https://github.com/" target="_blank" rel="noopener noreferrer" class="social-icon-box" title="GitHub">
+                                    <i class="fa-brands fa-github"></i>
+                                </a>
+                                <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer" class="social-icon-box" title="LinkedIn">
+                                    <i class="fa-brands fa-linkedin-in"></i>
+                                </a>
+                                <a href="https://instagram.com/" target="_blank" rel="noopener noreferrer" class="social-icon-box" title="Instagram">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form Column -->
+                <div class="col-lg-7">
+                    <div class="glass-card p-4 p-md-5">
+                        <h3 class="h4 text-white mb-2">Send a Message</h3>
+                        <p class="text-secondary small mb-4">Fill out the form below and I will get back to you promptly.</p>
+
+                        <!-- Developer Notice Regarding Backend Requirements -->
+                        <div class="backend-notice mb-4 p-3 rounded-3">
+                            <div class="d-flex">
+                                <div class="me-3 text-accent-blue"><i class="fa-solid fa-circle-info fa-lg"></i></div>
+                                <div class="small text-secondary">
+                                    <strong class="text-white">Note for Workshop / Deployment:</strong>
+                                    This is a frontend client form with live interactive validation. To receive emails directly, connect this form to a backend service like 
+                                    <a href="https://formspree.io" target="_blank" class="text-accent-blue text-decoration-none">Formspree</a>, 
+                                    <a href="https://www.emailjs.com" target="_blank" class="text-accent-blue text-decoration-none">EmailJS</a>, or a custom Node/Python backend.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Contact Form -->
+                        <form id="portfolioContactForm" novalidate>
+                            <!-- Name Field -->
+                            <div class="mb-3">
+                                <label for="userName" class="form-label text-light small fw-medium">Your Name <span class="text-danger">*</span></label>
+                                <div class="input-group">
+                                    <span class="input-group-text"><i class="fa-regular fa-user"></i></span>
+                                    <input type="text" class="form-control" id="userName" placeholder="Enter your full name" required>
+                                </div>
+                                <div class="invalid-feedback" id="userNameFeedback">Please enter your name.</div>
+                            </div>
+
+                            <!-- Email Field -->
+                            <div class="mb-3">
+                                <label for="userEmail" class="form-label text-light small fw-medium">Your Email <span class="text-danger">*</span></label>
+                                <div class="input-group">
+                                    <span class="input-group-text"><i class="fa-regular fa-envelope"></i></span>
+                                    <input type="email" class="form-control" id="userEmail" placeholder="name@example.com" required>
+                                </div>
+                                <div class="invalid-feedback" id="userEmailFeedback">Please enter a valid email address.</div>
+                            </div>
+
+                            <!-- Subject Field -->
+                            <div class="mb-3">
+                                <label for="userSubject" class="form-label text-light small fw-medium">Subject</label>
+                                <div class="input-group">
+                                    <span class="input-group-text"><i class="fa-solid fa-tag"></i></span>
+                                    <input type="text" class="form-control" id="userSubject" placeholder="Opportunity, Collaboration, or Question">
+                                </div>
+                            </div>
+
+                            <!-- Message Field -->
+                            <div class="mb-4">
+                                <label for="userMessage" class="form-label text-light small fw-medium">Your Message <span class="text-danger">*</span></label>
+                                <textarea class="form-control" id="userMessage" rows="4" placeholder="Write your message here..." required></textarea>
+                                <div class="invalid-feedback" id="userMessageFeedback">Please write a brief message (minimum 10 characters).</div>
+                            </div>
+
+                            <!-- Submit Button -->
+                            <button type="submit" class="btn btn-primary-glow w-100 py-3" id="submitContactBtn">
+                                <i class="fa-solid fa-paper-plane me-2"></i> Send Message
+                            </button>
+                        </form>
+
+                        <!-- Success Alert Message (Hidden Initially) -->
+                        <div id="formSuccessAlert" class="alert alert-success d-none mt-4 align-items-center" role="alert">
+                            <i class="fa-solid fa-circle-check me-2 fa-lg"></i>
+                            <div>
+                                <strong>Message Sent Successfully!</strong> Thank you for reaching out. I will respond to your inquiry shortly.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==============================================
+         8. FOOTER
+         ============================================== -->
+    <footer class="footer py-4 position-relative">
+        <div class="container">
+            <div class="row align-items-center gy-3">
+                <!-- Footer Brand / Name -->
+                <div class="col-md-4 text-center text-md-start">
+                    <span class="brand-name fw-bold fs-5">ANSHIKA<span class="accent-dot">.P</span></span>
+                    <p class="text-muted small mb-0 mt-1">Data Analyst Aspirant | Analytics & Insights</p>
+                </div>
+
+                <!-- Footer Quick Nav -->
+                <div class="col-md-4 text-center">
+                    <ul class="footer-links list-inline mb-0">
+                        <li class="list-inline-item"><a href="#home">Home</a></li>
+                        <li class="list-inline-item"><a href="#about">About</a></li>
+                        <li class="list-inline-item"><a href="#skills">Skills</a></li>
+                        <li class="list-inline-item"><a href="#projects">Projects</a></li>
+                        <li class="list-inline-item"><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Socials & Copyright -->
+                <div class="col-md-4 text-center text-md-end">
+                    <div class="d-flex justify-content-center justify-content-md-end gap-2 mb-2">
+                        <a href="https://github.com/" target="_blank" rel="noopener noreferrer" class="footer-social-icon" title="GitHub"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer" class="footer-social-icon" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="https://instagram.com/" target="_blank" rel="noopener noreferrer" class="footer-social-icon" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                    <p class="text-muted small mb-0">
+                        &copy; <span id="currentYear">2026</span> Anshika P. All rights reserved.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTopBtn" class="back-to-top" title="Back to top" aria-label="Back to top">
+        <i class="fa-solid fa-chevron-up"></i>
+    </button>
+
+    <!-- Bootstrap 5 Bundle JS CDN (Includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <!-- Custom JavaScript File -->
+    <script src="script.js"></script>
+</body>
+</html>
